@@ -24,7 +24,7 @@ class Solution {
             curr=next;
         }
         head.next=null;
-        head=prev;
-       return head; 
+        
+       return prev; 
     }
 }
