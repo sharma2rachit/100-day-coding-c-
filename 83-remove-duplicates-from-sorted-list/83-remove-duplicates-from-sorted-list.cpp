@@ -14,7 +14,11 @@ public:
         ListNode *curr= head;
         while(curr!=NULL && curr->next!=NULL){
             
-            if(curr->val == curr->next->val) curr->next=curr->next->next;
+            if(curr->val == curr->next->val){
+                ListNode *temp= new ListNode;
+                curr->next=curr->next->next;
+                delete(temp);
+            }
             else(curr=curr->next);
 
         } 
