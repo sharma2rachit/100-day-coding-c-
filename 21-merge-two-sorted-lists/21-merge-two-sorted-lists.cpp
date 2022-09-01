@@ -25,8 +25,8 @@ public:
             curr=curr->next;
             
         }
-        if(list1!=NULL) curr->next=list1;
-        if(list2!=NULL) curr->next=list2;
+        if(list1==NULL) curr->next=list2;
+        if(list2==NULL) curr->next=list1;
         
         return head->next;
     }
