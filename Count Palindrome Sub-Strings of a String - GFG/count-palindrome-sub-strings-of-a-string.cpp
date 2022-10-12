@@ -27,7 +27,7 @@ int CountPS(char S[], int N)
 {
     //code here
     int dp[N][N], ctr = 0;
-    memset(dp,0,sizeof(dp));
+    vector<vector<int>> v(N,vector<int>(N,0));
     for(int gap=0; gap<N; gap++){
         for(int i=0,j=gap; j<N; i++,j++){
             if(gap == 0){
